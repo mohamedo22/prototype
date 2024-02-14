@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+        <div id="head">
+            <img src="Screenshot (80).png" id="logo" alt="">
+            <button id="login">Log in</button>
+            <input type="search" id="search" placeholder="Click to search ">
+        </div>
+        <div class="contanir">
+            <div class="cont">
+                <img src="f1.jpg" id="first_c_im" alt="" style="width: 100%; height: 15vw; border-radius: 10px;">
+               <div style="display:flex ;">
+                <div id="price" style="margin-left: 2vw;">Price:20000000$</div>
+                <div id="place" style="margin-left: 10vw;">Place:cairo</div>
+                </div>
+                <br>
+                <button style="margin-left: 10vw;"><Span>View more</Span> 
+                    <svg style="margin-bottom:-.4vw" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+            </div>
+            <div class="cont">
+                <img id="sc_c_im" src="f1.jpg" alt="" style="width: 100%; height: 15vw; border-radius: 10px;">
+               <div style="display:flex ;">
+                <div id="s_price" style="margin-left: 2vw;">Price:20000000$</div>
+                <div id="s_place" style="margin-left: 10vw;">Place:cairo</div>
+                </div>
+                <br>
+                <button style="margin-left: 10vw;"><Span>View more</Span> 
+                    <svg style="margin-bottom:-.4vw" xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </button>
+            </div>
+        </div>
+
+        <script>
+            let first_flat = 
+            {
+                "src_image": "f1.jpg",
+                "price":"price : 20000000$",
+                "place":"place : Cairo"
+            };
+            let sec_flat = 
+            {
+                "src_image": "f2.jpg",
+                "price":"price : 40000000$",
+                "place":"place : alex"
+            };
+            document.getElementById("first_c_im").src = first_flat.src_image;
+            document.getElementById("price").textContent =first_flat.price;
+            document.getElementById("place").textContent=first_flat.place;
+            document.getElementById("sc_c_im").src = sec_flat.src_image;
+            document.getElementById("s_price").textContent = sec_flat.price;
+            document.getElementById("s_place").textContent = sec_flat.place;
+        </script>
+</body>
+</html>
